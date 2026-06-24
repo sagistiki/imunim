@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { 
   Play, Trash2, Edit2, Check, Save, Dumbbell, 
-  RotateCcw, Sparkles, X, Eye, ClipboardList
+  RotateCcw, Sparkles, X, Eye
 } from 'lucide-react';
 import { type Exercise, type WorkoutRoutine, type FocusArea } from '../types/exercise';
 
@@ -101,7 +101,6 @@ export const WorkoutPlanner: React.FC<WorkoutPlannerProps> = ({
       Math.ceil(exCount * 0.6), 
       shuffledCompounds.length
     );
-    const targetIsoCount = exCount - targetCompCount;
 
     const selectedList: Exercise[] = [];
     
